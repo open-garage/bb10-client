@@ -4,10 +4,30 @@ BASEDIR = $$quote($$_PRO_FILE_PWD_)
 device {
     CONFIG(debug, debug|release) {
         profile {
+            INCLUDEPATH += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0)
+
+            DEPENDPATH += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0)
+
+            LIBS += -lFlurry
+
+            LIBS += $$quote(-L/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0/Flurry/armle-v7)
+
+            PRE_TARGETDEPS += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0/Flurry/armle-v7)
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
         } else {
+            INCLUDEPATH += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0)
+
+            DEPENDPATH += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0)
+
+            LIBS += -lFlurry
+
+            LIBS += $$quote(-L/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0/Flurry/armle-v7)
+
+            PRE_TARGETDEPS += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0/Flurry/armle-v7)
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
@@ -17,6 +37,16 @@ device {
 
     CONFIG(release, debug|release) {
         !profile {
+            INCLUDEPATH += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0)
+
+            DEPENDPATH += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0)
+
+            LIBS += -lFlurry
+
+            LIBS += $$quote(-L/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0/Flurry/armle-v7)
+
+            PRE_TARGETDEPS += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0/Flurry/armle-v7)
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1
@@ -27,6 +57,16 @@ device {
 simulator {
     CONFIG(debug, debug|release) {
         !profile {
+            INCLUDEPATH += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0)
+
+            DEPENDPATH += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0)
+
+            LIBS += -lFlurry
+
+            LIBS += $$quote(-L/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0/Flurry/x86)
+
+            PRE_TARGETDEPS += $$quote(/Users/dustin/Development/Libraries/Flurry_BlackberrySDK_SDK_v2.0/Flurry/x86)
+
             CONFIG += \
                 config_pri_assets \
                 config_pri_source_group1

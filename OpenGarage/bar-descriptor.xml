@@ -27,6 +27,7 @@
         is recommended. (Eg. com.example.ExampleApplication.) Required. -->
     <id>net.alopix.OpenGarage</id>
     <permission>access_internet</permission>
+    <permission>read_device_identifying_information</permission>
 
     <!-- The name that is displayed in the BlackBerry 10 application installer.
         May have multiple values for each language. See samples or xsd schema file.

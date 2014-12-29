@@ -9,3 +9,4 @@ QT += network
 LIBS += -lbb
 LIBS += -lbbdata
 LIBS += -lbbsystem
+LIBS += -lscreen -lcrypto -lcurl -lpackageinfo -lbbdevice

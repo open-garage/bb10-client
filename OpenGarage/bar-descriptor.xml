@@ -25,7 +25,8 @@
     <!-- A universally unique application identifier. Must be unique across
         all BlackBerry 10 applications. Using a reverse DNS-style name as the id
         is recommended. (Eg. com.example.ExampleApplication.) Required. -->
-    <id>com.example.OpenGarage</id>
+    <id>net.alopix.OpenGarage</id>
+    <permission>access_internet</permission>
 
     <!-- The name that is displayed in the BlackBerry 10 application installer.
         May have multiple values for each language. See samples or xsd schema file.
@@ -39,6 +40,7 @@
         than the previous version. Required. -->
     <versionNumber>1.0.0</versionNumber>
     <platformVersion>10.2.0</platformVersion>
+    <authorId>gYAAgK_PtCUUo1CCGLbIbHaDh4A</authorId>
 
     <!-- Fourth digit segment of the package version. First three segments are
         taken from the <versionNumber> element. Must be an integer from 0 to 2^16-1 -->
@@ -58,7 +60,7 @@
 
     <!-- Name of author which is used for signing. Must match the developer
         name of your development certificate. -->
-    <author>Example Inc.</author>
+    <author>Dustin Steiner</author>
     <configuration name="Device-Debug">
         <platformArchitecture>armle-v7</platformArchitecture>
         <entryPointType>Qnx/Elf</entryPointType>
@@ -151,19 +153,24 @@
 
     <!-- The icon for the application, which should be 114x114. -->
     <icon>
-        <image>icon.png</image>
+        <image>icon_110.png</image>
+        <image>icon_144.png</image>
+        <image>icon_90.png</image>
+        <image>icon_96.png</image>
     </icon>
 
-    <asset path="icon.png">icon.png</asset>
     <asset path="assets">assets</asset>
 
     <!-- Locale support -->
     <asset path="translations" dest="qm">
         <include name="*.qm" />
     </asset>
+    <asset path="icon_110.png">icon_110.png</asset>
+    <asset path="icon_144.png">icon_144.png</asset>
+    <asset path="icon_90.png">icon_90.png</asset>
+    <asset path="icon_96.png">icon_96.png</asset>
 
     <!-- Request permission to post notification. -->
-    <permission>post_notification</permission>
     <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib" />
 
 </qnx>

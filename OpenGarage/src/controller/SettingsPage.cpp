@@ -105,6 +105,7 @@ namespace controller
     {
         SystemPrompt* prompt = new SystemPrompt(this);
         prompt->setTitle(tr("Set Server Host"));
+        prompt->inputField()->setInputMode(SystemUiInputMode::Url);
         prompt->inputField()->setEmptyText(tr("e.g. localhost"));
         prompt->inputField()->setDefaultText(mServerHostItem->description());
         connect(prompt, SIGNAL(finished(bb::system::SystemUiResult::Type)), this,
@@ -168,6 +169,7 @@ namespace controller
         SystemPrompt* prompt = new SystemPrompt(this);
         prompt->setTitle(tr("Set API Token"));
         prompt->setBody(tr("You should have received one from your Open Garage Admin"));
+        prompt->setInputOptions(SystemUiInputOption::None);
         prompt->inputField()->setDefaultText(mApiTokenItem->description());
         connect(prompt, SIGNAL(finished(bb::system::SystemUiResult::Type)), this,
                 SLOT(onApiTokenEntered(bb::system::SystemUiResult::Type)));

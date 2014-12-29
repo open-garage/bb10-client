@@ -38,7 +38,8 @@ config_pri_assets {
     OTHER_FILES += \
         $$quote($$BASEDIR/assets/content/SettingsPage.qml) \
         $$quote($$BASEDIR/assets/content/TogglePage.qml) \
-        $$quote($$BASEDIR/assets/helmsdeep.pem)
+        $$quote($$BASEDIR/assets/helmsdeep.pem) \
+        $$quote($$BASEDIR/assets/images/ic_reload.png)
 }
 
 config_pri_source_group1 {
@@ -103,7 +104,10 @@ lupdate_inclusion {
         $$quote($$BASEDIR/../assets/*.qs) \
         $$quote($$BASEDIR/../assets/content/*.qml) \
         $$quote($$BASEDIR/../assets/content/*.js) \
-        $$quote($$BASEDIR/../assets/content/*.qs)
+        $$quote($$BASEDIR/../assets/content/*.qs) \
+        $$quote($$BASEDIR/../assets/images/*.qml) \
+        $$quote($$BASEDIR/../assets/images/*.js) \
+        $$quote($$BASEDIR/../assets/images/*.qs)
 
     HEADERS += \
         $$quote($$BASEDIR/../src/*.h) \

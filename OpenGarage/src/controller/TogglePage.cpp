@@ -53,8 +53,8 @@ namespace controller
 
     void TogglePage::initActionbar()
     {
-        mStatusAction = ActionItem::create().parent(this).title(tr("Status")).onTriggered(this,
-                SLOT(loadStatus()));
+        mStatusAction = ActionItem::create().parent(this).title(tr("Status")).imageSource(
+                QUrl("asset:///images/ic_reload.png")).onTriggered(this, SLOT(loadStatus()));
         addAction(mStatusAction, ActionBarPlacement::OnBar);
     }
 

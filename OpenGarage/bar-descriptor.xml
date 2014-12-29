@@ -137,7 +137,7 @@
         <invoke-target-type>application</invoke-target-type>
         <invoke-target-name>OpenGarage</invoke-target-name>
         <icon>
-            <image>icon.png</image>
+            <image>icon_144.png</image>
         </icon>
         <entry-point-id>OpenGarage</entry-point-id>
     </invoke-target>

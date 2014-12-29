@@ -28,6 +28,10 @@ ApplicationUI::ApplicationUI() :
     initAppMenu();
 }
 
+ApplicationUI::~ApplicationUI()
+{
+}
+
 void ApplicationUI::onSystemLanguageChanged()
 {
     QCoreApplication::instance()->removeTranslator(mTranslator);
@@ -39,7 +43,7 @@ void ApplicationUI::onSystemLanguageChanged()
 }
 void ApplicationUI::onPopTransitionEnded(Page* page)
 {
-    if (page) {
+    if (page != NULL) {
         page->deleteLater();
     }
 }

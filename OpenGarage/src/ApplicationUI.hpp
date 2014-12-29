@@ -24,9 +24,7 @@ class ApplicationUI: public QObject
 
 public:
     ApplicationUI();
-    virtual ~ApplicationUI()
-    {
-    }
+    virtual ~ApplicationUI();
 
     Q_INVOKABLE
     void resendNotification();

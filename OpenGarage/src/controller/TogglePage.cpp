@@ -130,7 +130,7 @@ namespace controller
     {
         // TODO: error
 
-        updateActionbar();
+        setStatusLoading(false);
 
         sender()->deleteLater();
     }
